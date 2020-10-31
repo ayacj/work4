@@ -1,0 +1,255 @@
+@charset "UTF-8";
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/**卷軸**/
+section::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+section::-webkit-scrollbar,
+div::-webkit-scrollbar,
+main::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 4px;
+  background-color: #1b8f55;
+}
+
+section::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #1b8f55;
+}
+
+.app-wrap.main .app-container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+.app-wrap.main .app-container .header {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
+.app-wrap.main .app-container .header .menu-btn {
+  display: none;
+}
+.app-wrap.main .app-container .header .close-btn {
+  display: none;
+}
+.app-wrap.main .app-container .header .logo {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  left: 200px;
+}
+.app-wrap.main .app-container .header img {
+  width: 180px;
+}
+.app-wrap.main .app-container .header .nav {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+.app-wrap.main .app-container .header .nav ul {
+  display: flex;
+}
+.app-wrap.main .app-container .header .nav ul li {
+  padding: 0 10px;
+  font-size: 0;
+}
+.app-wrap.main .app-container .header .nav ul a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.app-wrap.main .app-container .header .nav ul a:hover {
+  color: #fff;
+  border-radius: 5px;
+  background-color: #4a7a5a;
+}
+.app-wrap.main .app-container .banner img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.app-wrap.main .app-container .about {
+  width: 100%;
+  height: 400px;
+  background-color: #4a7a5a;
+}
+.app-wrap.main .app-container .about .title {
+  width: 80%;
+  margin: 0 auto;
+}
+.app-wrap.main .app-container .about .title h1 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0 0 0;
+  letter-spacing: 10px;
+}
+.app-wrap.main .app-container .about .title h3 {
+  color: rgba(255, 255, 255, 0.61);
+  text-align: center;
+  padding: 15px 0 50px 0;
+  font-size: 20px;
+  letter-spacing: 15px;
+}
+.app-wrap.main .app-container .about .title P {
+  color: rgba(255, 255, 255, 0.76);
+  text-align: center;
+  letter-spacing: 10px;
+}
+.app-wrap.main .app-container .about .title .btn {
+  padding: 75px 0;
+  text-align: center;
+}
+.app-wrap.main .app-container .about .title .btn a {
+  color: #4a7a5a;
+  background-color: white;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.app-wrap.main .app-container .about .title .btn a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.562);
+}
+.app-wrap.main .app-container .content {
+  background-color: white;
+}
+.app-wrap.main .app-container .content h1 {
+  font-size: 30px;
+  color: #4a7a5a;
+  text-align: center;
+  padding: 100px 0 0 0;
+  letter-spacing: 10px;
+}
+.app-wrap.main .app-container .content p {
+  color: #073f02;
+  text-align: center;
+  padding: 15px 0 50px 0;
+  font-size: 20px;
+  letter-spacing: 15px;
+}
+.app-wrap.main .app-container .content .row {
+  display: flex;
+  justify-content: center;
+}
+.app-wrap.main .app-container .content .row .item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px #000 solid;
+  margin: 0 10px;
+  text-align: center;
+  padding: 25px 0;
+}
+.app-wrap.main .app-container .content .row .item .pic {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  left: 50px;
+  z-index: 1;
+}
+.app-wrap.main .app-container .content .row .item .pic:hover img {
+  transform: scale(1.2, 1.2);
+}
+.app-wrap.main .app-container .content .row .item .pic img {
+  width: 100%;
+  margin: auto;
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+}
+.app-wrap.main .app-container .content .row .item p {
+  position: absolute;
+  text-align: center;
+  color: #2f726f;
+  letter-spacing: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.app-wrap.main .app-container .content .btn {
+  text-align: center;
+  padding: 50px 0;
+}
+.app-wrap.main .app-container .content .btn a {
+  color: white;
+  background-color: #4a7a5a;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.app-wrap.main .app-container .content .btn a:hover {
+  background-color: rgba(74, 122, 90, 0.589);
+  color: rgba(0, 0, 0, 0.486);
+}
+.app-wrap.main .app-container .content ul, .app-wrap.main .app-container .content li {
+  list-style: none;
+}
+.app-wrap.main .app-container .content-1 {
+  background-color: white;
+}
+.app-wrap.main .app-container .content-1 h1 {
+  font-size: 30px;
+  color: #4a7a5a;
+  text-align: center;
+  padding: 100px 0 0 0;
+  letter-spacing: 10px;
+}
+.app-wrap.main .app-container .content-1 p {
+  color: #073f02;
+  text-align: center;
+  padding: 15px 0 50px 0;
+  font-size: 20px;
+  letter-spacing: 15px;
+}
+.app-wrap.main .app-container .content-1 .row {
+  display: flex;
+  justify-content: center;
+}
+.app-wrap.main .app-container .content-1 .row .item {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 20px 0;
+}
+.app-wrap.main .app-container .content-1 .row .item img {
+  width: 100%;
+}
+.app-wrap.main .app-container .content-1 .btn {
+  padding: 55px 0;
+  text-align: center;
+}
+.app-wrap.main .app-container .content-1 .btn a {
+  color: white;
+  background-color: #4a7a5a;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.app-wrap.main .app-container .content-1 .btn a:hover {
+  background-color: rgba(74, 122, 90, 0.589);
+  color: rgba(0, 0, 0, 0.486);
+}
+.app-wrap.main .app-container .content-1 ul, .app-wrap.main .app-container .content-1 li {
+  list-style: none;
+}
+.app-wrap.main .app-container .footer {
+  background-color: #4a7a5a;
+  color: rgba(255, 255, 255, 0.671);
+  text-align: center;
+  height: 100px;
+  padding: 100px 0 50px 0;
+}

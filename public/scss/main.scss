@@ -1,0 +1,273 @@
+html, body{ 
+    min-height: 100vh;
+    margin:0;
+    padding:0; 
+}
+/**卷軸**/
+section::-webkit-scrollbar-track, 
+div::-webkit-scrollbar-track, 
+main::-webkit-scrollbar-track, 
+body::-webkit-scrollbar-track { 
+ background-color: rgba(255, 255, 255, 0.568); 
+ } 
+section::-webkit-scrollbar, 
+div::-webkit-scrollbar, 
+main::-webkit-scrollbar, 
+body::-webkit-scrollbar { 
+width: 4px; 
+background-color: rgb(27, 143, 85); 
+} 
+section::-webkit-scrollbar-thumb, 
+div::-webkit-scrollbar-thumb, 
+main::-webkit-scrollbar-thumb, 
+body::-webkit-scrollbar-thumb { 
+border-radius: 8px; 
+background-color: rgb(27, 143, 85); 
+}
+
+.app-wrap.main{
+    .app-container{
+        position: relative;
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+        .header{
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            .menu-btn{
+                display: none;
+            }
+            .close-btn{
+                display: none;
+            }
+            .logo{
+                position: absolute;
+                display: inline-block;
+                top:20px;
+                left:200px;
+            }
+            img{
+                width: 180px;
+            }
+            .nav{
+                position: absolute;
+                right: 0;
+                top:100px;
+                ul{ 
+                    display: flex;
+                    li{
+                        padding: 0 10px;
+                        font-size: 0;
+                    }
+                    a{
+                        color: #000;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 10px 20px;
+                        &:hover{
+                            color: #fff;
+                            border-radius: 5px;
+                            background-color: rgb(74, 122, 90);
+                        }
+                    }
+                }
+            }   
+           
+        }
+
+        .banner{
+            
+            img{
+                width: 100%;
+                vertical-align: bottom;
+            }
+        }
+        .about{
+            width: 100%;
+            height: 400px;
+            background-color: rgb(74, 122, 90);
+            .title{
+                width: 80%;
+                margin: 0 auto;
+                h1{
+                    font-size: 40px;
+                    color: #fff;
+                    text-align: center;
+                    padding: 100px 0 0 0;
+                    letter-spacing:10px;
+                }
+                h3{
+                    color: rgba(255, 255, 255, 0.61);
+                    text-align: center;
+                    padding: 15px 0 50px 0;
+                    font-size: 20px;
+                    letter-spacing:15px;
+                }
+                P{
+                    color: rgba(255, 255, 255, 0.76);
+                    text-align: center;
+                    letter-spacing:10px;
+                }
+                .btn{
+                    padding: 75px 0;
+                    text-align: center;
+                    a{
+                        color: rgb(74, 122, 90);
+                        background-color: rgb(255, 255, 255);
+                        padding: 20px 50px;
+                        text-decoration: none;
+                        border-radius: 10px;
+                        &:hover{
+                            color: rgb(255, 255, 255);
+                            background-color: rgba(255, 255, 255, 0.562);
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            background-color: rgb(255, 255, 255);
+            h1{
+                font-size: 30px;
+                color: rgb(74, 122, 90);
+                text-align: center;
+                padding: 100px 0 0 0;
+                letter-spacing:10px;
+            }
+            p{
+                color: rgb(7, 63, 2);
+                text-align: center;
+                padding: 15px 0 50px 0;
+                font-size: 20px;
+                letter-spacing:15px;
+            }
+            .row{
+                display: flex;
+                justify-content: center;
+                .item{
+                    position: relative;
+                    width: 300px;
+                    height: 300px;
+                    border: 1px #000 solid;
+                    margin: 0 10px;
+                    text-align: center;
+                    padding: 25px 0;
+                   .pic{
+                       position: absolute;
+                       width: 200px;
+                       height: 200px;
+                       overflow:hidden;
+                       left: 50px;
+                       z-index: 1;
+                       &:hover{
+                           img{
+                                transform:scale(1.2,1.2);
+                           }
+                        }
+                     img{
+                        width: 100%;
+                        margin: auto;
+                        transform:scale(1,1) ;
+                        transition: all 1s ease-out;
+               
+                    }
+                   }
+                    p{
+                    position: absolute;
+                    text-align: center;
+                    color: rgb(47, 114, 111);
+                    letter-spacing:2px;
+                    width: 100%;
+                    bottom:0;
+                    }
+                    
+                }
+                
+            }
+            .btn{
+                text-align: center;
+                padding: 50px 0;
+                a{
+                    color: rgb(255, 255, 255);
+                    background-color:rgb(74, 122, 90);
+                    padding: 20px 50px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color:rgba(74, 122, 90, 0.589);
+                        color: rgba(0, 0, 0, 0.486);
+                    }
+                }
+            }
+            
+            ul,li{
+                list-style: none;
+            }
+
+            
+        }
+        .content-1{
+            background-color: rgb(255, 255, 255);
+            h1{
+                font-size: 30px;
+                color: rgb(74, 122, 90);
+                text-align: center;
+                padding: 100px 0 0 0;
+                letter-spacing:10px;
+            }
+            p{
+                color: rgb(7, 63, 2);
+                text-align: center;
+                padding: 15px 0 50px 0;
+                font-size: 20px;
+                letter-spacing:15px;
+            }
+            .row{
+                display: flex;
+                justify-content: center;
+                .item{
+                    width: 300px;
+                    height: 300px;
+                    text-align: center;
+                    padding: 20px 0;
+                    img{
+                        width: 100%;
+                    }
+                    
+                }
+                
+            }
+            .btn{
+                padding: 55px 0;
+                text-align: center;
+                a{
+                    color: rgb(255, 255, 255);
+                    background-color:rgb(74, 122, 90);
+                    padding: 20px 50px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color:rgba(74, 122, 90, 0.589);
+                        color: rgba(0, 0, 0, 0.486);
+                    }
+                }
+            }
+            
+            ul,li{
+                list-style: none;
+            }
+
+            
+        }
+        .footer{
+            background-color: rgb(74, 122, 90);
+            color: rgba(255, 255, 255, 0.671);
+            text-align: center;
+            height: 100px;
+            padding: 100px 0 50px 0;
+        }
+    }
+
+}
+
