@@ -62,6 +62,7 @@ body::-webkit-scrollbar-thumb {
 }
 .app-wrap.main .app-container .header .nav ul {
   display: flex;
+  margin: 0 80px;
 }
 .app-wrap.main .app-container .header .nav ul li {
   padding: 0 10px;

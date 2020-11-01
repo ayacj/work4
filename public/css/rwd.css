@@ -33,14 +33,14 @@
     background-color: rgba(74, 122, 90, 0.767);
     z-index: 5;
   }
-  .app-wrap.main .app-container .header .nav ul {
+  .app-wrap.main .app-container .header .nav .items {
     display: block;
     padding: 200px 70px;
   }
-  .app-wrap.main .app-container .header .nav ul li {
+  .app-wrap.main .app-container .header .nav .items li {
     padding: 20px 5px;
   }
-  .app-wrap.main .app-container .header .nav ul a {
+  .app-wrap.main .app-container .header .nav .items a {
     color: white;
     font-size: 50px;
     display: inline-block;
@@ -48,7 +48,7 @@
     text-align: center;
     box-sizing: border-box;
   }
-  .app-wrap.main .app-container .header .nav ul a:hover {
+  .app-wrap.main .app-container .header .nav .items a:hover {
     background-color: rgba(220, 220, 220, 0.637);
     color: #0c6d2d;
     border-radius: 20px;
@@ -125,6 +125,12 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .app-wrap.main .app-container .header .logo {
+    top: 30px;
+  }
+  .app-wrap.main .app-container .header .nav .items {
+    padding: 200px 0;
+  }
   .app-wrap.main .app-container .header img {
     width: 70%;
   }
@@ -158,5 +164,23 @@
   }
   .app-wrap.main .app-container .content-1 .row .item {
     width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app-wrap.main .app-container .header .logo {
+    top: 65px;
+  }
+  .app-wrap.main .app-container .header .nav .items {
+    padding: 200px 0;
+  }
+  .app-wrap.main .app-container .about .title .btn {
+    padding: 40px 0;
+  }
+  .app-wrap.main .app-container .content-1 .row .item {
+    padding: 0;
+    height: 100%;
+  }
+  .app-wrap.main .app-container .content-1 .btn {
+    padding: 30px 0 80px 0;
   }
 }

@@ -32,7 +32,7 @@
                     height: 100vh;
                     background-color: rgba(74, 122, 90, 0.767);
                     z-index: 5;
-                    ul{ 
+                    .items{ 
                         display: block;
                         padding: 200px 70px;
                         li{
@@ -163,6 +163,14 @@
     .app-wrap.main{
         .app-container{
             .header{
+                .logo{
+                    top:30px;
+                }
+                .nav{
+                    .items{
+                        padding: 200px 0;
+                    }
+                }
                 img{
                     width: 70%;
                 }
@@ -223,6 +231,44 @@
 
 }
 
+
+@media screen and (max-width: 320px){
+    .app-wrap.main{
+        .app-container{
+            .header{
+                .logo{
+                    top:65px;
+                }
+                .nav{
+                    .items{
+                        padding: 200px 0;
+                    }
+                }
+            }
+            .about{
+                .title{
+                    .btn{
+                        padding: 40px 0;
+                    }
+                }
+            }
+
+            .content-1{
+                .row{
+                    .item{
+                        padding: 0;
+                        height: 100%;
+                    }
+                }
+                .btn{
+                    padding: 30px 0 80px 0;
+                }
+            }
+
+        }
+    }
+
+}
 
 
 
