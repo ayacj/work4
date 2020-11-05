@@ -163,8 +163,17 @@
     .app-wrap.main{
         .app-container{
             .header{
+                .menu-btn{
+                    left: 80px;
+                    top:80px;
+                }
+                .close-btn{
+                    right: 120px;
+                    top:70px;
+                }
                 .logo{
-                    top:30px;
+                    top:20px;
+                    right: 5px;
                 }
                 .nav{
                     .items{
@@ -236,12 +245,28 @@
     .app-wrap.main{
         .app-container{
             .header{
+                height: 150px;
+                .menu-btn{
+                    left: 50px;
+                    top:50px;
+                }
+                .close-btn{
+                    right: 70px;
+                    top:90px;
+                }
                 .logo{
-                    top:65px;
+                    top:40px;
+                    img{
+                        width: 70%;
+                    }
                 }
                 .nav{
                     .items{
-                        padding: 200px 0;
+                        padding: 160px 0;
+                        a{
+                            font-size: 35px;
+                            padding: 0;
+                        }
                     }
                 }
             }

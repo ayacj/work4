@@ -125,8 +125,17 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .app-wrap.main .app-container .header .menu-btn {
+    left: 80px;
+    top: 80px;
+  }
+  .app-wrap.main .app-container .header .close-btn {
+    right: 120px;
+    top: 70px;
+  }
   .app-wrap.main .app-container .header .logo {
-    top: 30px;
+    top: 20px;
+    right: 5px;
   }
   .app-wrap.main .app-container .header .nav .items {
     padding: 200px 0;
@@ -167,11 +176,29 @@
   }
 }
 @media screen and (max-width: 320px) {
+  .app-wrap.main .app-container .header {
+    height: 150px;
+  }
+  .app-wrap.main .app-container .header .menu-btn {
+    left: 50px;
+    top: 50px;
+  }
+  .app-wrap.main .app-container .header .close-btn {
+    right: 70px;
+    top: 90px;
+  }
   .app-wrap.main .app-container .header .logo {
-    top: 65px;
+    top: 40px;
+  }
+  .app-wrap.main .app-container .header .logo img {
+    width: 70%;
   }
   .app-wrap.main .app-container .header .nav .items {
-    padding: 200px 0;
+    padding: 160px 0;
+  }
+  .app-wrap.main .app-container .header .nav .items a {
+    font-size: 35px;
+    padding: 0;
   }
   .app-wrap.main .app-container .about .title .btn {
     padding: 40px 0;
